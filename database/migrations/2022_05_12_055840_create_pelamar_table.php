@@ -16,8 +16,8 @@ class CreatePelamarTable extends Migration
         Schema::create('pelamar', function (Blueprint $table) {
             $table->id();
             $table->string('nama_lengkap');
-            $table->integer('no_telp');
-            $table->integer('no_wa');
+            $table->string('no_telp');
+            $table->string('no_wa');
             $table->string('nama_pekerjaan');
             $table->timestamps();
         });
